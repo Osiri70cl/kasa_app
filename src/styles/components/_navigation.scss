@@ -1,4 +1,10 @@
 .navigation {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  width: 100%;
+  align-items: center;
+  padding: 100px 40px;
   ul {
     display: flex;
     margin: 30px;
@@ -13,7 +19,7 @@
         cursor: pointer;
 
         &:hover {
-          color: $color-3;
+          color: $color-1;
         }
       }
     }
@@ -21,29 +27,9 @@
     .nav-active {
       position: relative;
 
-      &::after {
+      &:focus {
         content: "";
-        height: 4px;
-        width: 0;
-        background: $color-1;
-        position: absolute;
-        border-radius: 10px;
-        bottom: 0px;
-        left: 50%;
-        transform: translateX(-50%);
-        -webkit-animation: anim 0.3s ease forwards;
-        animation: anim 0.6s ease forwards;
-
-        @-webkit-keyframes anim {
-          to {
-            width: 100%;
-          }
-        }
-        @keyframes anim {
-          to {
-            width: 100%;
-          }
-        }
+        border-bottom: 2px solid $color-1;
       }
     }
   }

@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 const Navigation = () => {
   return (
-    <div className="navigation">
+    <header className="navigation">
       <svg
         width="210"
         height="368"
@@ -39,7 +39,7 @@ const Navigation = () => {
           <li>A propos</li>
         </NavLink>
       </ul>
-    </div>
+    </header>
   );
 };
 

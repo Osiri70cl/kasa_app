@@ -1,0 +1,22 @@
+.bannerArea {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  .banner {
+    background: url("../../assets/img/banner.jfif") center center;
+    background-size: cover;
+    height: 223px;
+    width: 1240px;
+    margin: 40px 100px;
+    overflow: hidden;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .banner__content {
+      color: white;
+    }
+  }
+}

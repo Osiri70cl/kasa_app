@@ -3,12 +3,26 @@
   src: url(../assets/fonts/JosefinSans-Medium.ttf);
 }
 
+@mixin media-query($key) {
+  $size: map-get($breakpoints, $key);
+  @media only screen and (min-width: $size) {
+    @content;
+  }
+}
+
 $font-1: "font-1", sans-serif;
 
 $color-1: #ff6060;
-$color-2: salmon;
-$color-3: #282c34;
-$white: rgb(243, 243, 243);
+$color-2: #f7f7f7;
+$color-3: black;
+$white: #fff;
+
+$breakpoints: (
+  small: 350px,
+  medium: 768px,
+  large: 992px,
+  xlarge: 1200px,
+);
 
 @mixin verticalCenter {
   display: flex;
@@ -25,7 +39,6 @@ $white: rgb(243, 243, 243);
 body {
   background: $white;
   font-family: $font-1;
-  // @include verticalCenter;
 }
 li {
   list-style-type: none;

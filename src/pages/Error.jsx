@@ -1,11 +1,10 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import Navigation from "../components/Navigation";
-import Footer from "../components/Footer";
 
 const Error = () => {
   return (
-    <main>
+    <main className="main">
       <Navigation />
       <div className="error">
         <h2 className="errorNumber">
@@ -29,7 +28,6 @@ const Error = () => {
           <li className="errorBackLink">Retourner sur la page d'accueil</li>
         </NavLink>
       </div>
-      <Footer />
     </main>
   );
 };

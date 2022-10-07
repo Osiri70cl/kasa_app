@@ -29,7 +29,7 @@ const Footer = () => {
           />
         </svg>
       </h2>
-      <p className="footerText">© 2020 Kasa. All rights reserved</p>
+      <p className="footerText">© 2022 Kasa. All rights reserved</p>
     </footer>
   );
 };

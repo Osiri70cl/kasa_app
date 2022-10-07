@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 
 const Error = () => {
   return (
-    <div>
+    <main>
       <Navigation />
       <div className="error">
         <h2 className="errorNumber">
@@ -30,7 +30,7 @@ const Error = () => {
         </NavLink>
       </div>
       <Footer />
-    </div>
+    </main>
   );
 };
 

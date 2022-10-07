@@ -1,5 +1,4 @@
 import React from "react";
-// possible d'ajuster l'ouverture du collapse avec usestate
 
 const Collapse = ({ title, content }) => {
   const isCollapse = (e) => {

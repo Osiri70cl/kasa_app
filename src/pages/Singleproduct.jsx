@@ -6,7 +6,6 @@ import Host from "../components/Host";
 import Slider from "../components/Slider";
 import Tags from "../components/Tags";
 import Collapse from "../components/Collapse";
-import Navigation from "../components/Navigation";
 
 const SingleProduct = () => {
   const { productId } = useParams();
@@ -16,7 +15,6 @@ const SingleProduct = () => {
 
   return (
     <main className="singleproduct">
-      <Navigation />
       <Slider slides={pictures} />
       <div className="singleproduct__content">
         <div className="singleproduct__informations">

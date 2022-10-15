@@ -2,7 +2,6 @@ import Banner from "../components/Banner";
 import aboutData from "../__mocks__/aboutData";
 import Collapse from "../components/Collapse";
 import imageBanner from "../assets/img/aboutbannerDesktop.png";
-import Navigation from "../components/Navigation";
 
 const About = () => {
   // Switch to display content in the dropdown by title
@@ -24,7 +23,6 @@ const About = () => {
 
   return (
     <main className="main">
-      <Navigation />
       <section className="about">
         <Banner image={imageBanner} />
         <div className="about__dropdowns">

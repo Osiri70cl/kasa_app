@@ -1,11 +1,9 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import Navigation from "../components/Navigation";
 
 const Error = () => {
   return (
     <main className="main">
-      <Navigation />
       <div className="error">
         <h2 className="errorNumber">
           <svg

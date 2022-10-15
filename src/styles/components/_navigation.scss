@@ -1,35 +1,64 @@
-.navigation {
+.navbar {
   display: flex;
   justify-content: space-between;
-  height: 100px;
-  width: 100%;
   align-items: center;
-  margin-bottom: 20px;
-  ul {
+  margin: 2%;
+  padding-top: 20px;
+  @include media-query(small) {
+    margin: 2% 2%;
+  }
+  @include media-query(medium) {
+    margin: 3% 3%;
+  }
+  @include media-query(large) {
+    margin: 5% 5%;
+  }
+
+  &__links {
     display: flex;
+    width: 33%;
+    justify-content: space-around;
 
-    a {
-      text-decoration: none;
-      padding: 10px;
-
-      li {
-        color: $color-1;
-        transition: 0.2s;
-        cursor: pointer;
-
-        &:hover {
-          color: $color-1;
-        }
-      }
+    @include media-query(small) {
+      width: 60%;
+    }
+    @include media-query(medium) {
+      width: 45%;
+    }
+    @include media-query(large) {
+      width: 33%;
     }
 
-    .nav-active {
-      position: relative;
-
-      &:focus {
-        content: "";
-        border-bottom: 2px solid $color-1;
+    &__style {
+      width: 50%;
+      color: $color-1;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      font-weight: 500;
+      text-decoration: underline;
+      @include media-query(small) {
+        font-size: small;
       }
+      @include media-query(medium) {
+        font-size: medium;
+      }
+      @include media-query(large) {
+        font-size: large;
+      }
+    }
+  }
+
+  &__img {
+    height: 47px;
+    @include media-query(small) {
+      height: 53px;
+    }
+    @include media-query(medium) {
+      height: 61px;
+    }
+    @include media-query(large) {
+      height: 68px;
     }
   }
 }

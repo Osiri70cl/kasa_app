@@ -5,10 +5,12 @@ import About from "./pages/About";
 import Singleproduct from "./pages/Singleproduct";
 import Error from "./pages/Error";
 import Footer from "./components/Footer";
+import Navigation from "./components/Navigation";
 
 const App = () => {
   return (
     <BrowserRouter>
+      <Navigation />
       <Routes>
         <Route path="/" element={<Home />} />
         {/* path="*" permet de renvoyé vers la page 404 ou vers une page prédéfinit

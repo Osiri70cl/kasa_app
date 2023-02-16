@@ -44,6 +44,10 @@ const Slider = ({ slides }) => {
           <div className="slider__next" onClick={nextSlide}>
             <img src={arrowRight} alt="" className="slider__next-icon" />
           </div>
+          <div className="slider__info">
+            <span className="slider__current-slide">{current + 1}</span> /{" "}
+            <span className="slider__total-slides">{length}</span>
+          </div>
         </>
       ) : null}
     </div>

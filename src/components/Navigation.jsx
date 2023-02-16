@@ -14,7 +14,7 @@ const Navigation = () => {
           Accueil
         </NavLink>
         <NavLink to="/about" className="navbar__links__style">
-          About
+          a propos
         </NavLink>
       </div>
     </nav>

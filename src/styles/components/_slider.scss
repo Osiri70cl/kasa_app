@@ -1,6 +1,16 @@
 .slider {
   position: relative;
 
+  &__info {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 6%;
+    color: $white;
+  }
+
   &__active-picture {
     height: 255px;
     width: 100%;

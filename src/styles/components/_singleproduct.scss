@@ -1,5 +1,5 @@
 .singleproduct {
-  margin: 0 5%;
+  margin: 27px 5% 0px 5%;
   color: $color-1;
 
   &__content {
@@ -11,12 +11,10 @@
     }
   }
   &__title {
-    margin: 0;
+    margin: 0px 0px 5px 0px;
     font-size: 18px;
     font-weight: 500;
-    @include media-query(small) {
-      font-size: 24px;
-    }
+
     @include media-query(medium) {
       font-size: 30px;
     }
@@ -27,11 +25,9 @@
   &__location {
     font-size: 14px;
     font-weight: 500;
-    @include media-query(small) {
-      font-size: 16px;
-    }
     @include media-query(medium) {
       margin-top: 0;
+      font-size: 16px;
     }
     @include media-query(large) {
       font-size: 18px;

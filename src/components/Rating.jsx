@@ -16,14 +16,14 @@ const Rating = ({ rating }) => {
             key={star.toString()}
             className="rating__icon"
             src={redstar}
-            alt=""
+            alt="etoile rouge"
           />
         ) : (
           <img
             key={star.toString()}
             className="rating__icon"
             src={greystar}
-            alt=""
+            alt="etoile grise"
           />
         )
       )}

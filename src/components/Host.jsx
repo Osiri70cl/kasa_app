@@ -5,14 +5,14 @@ const Host = ({ host }) => {
   const [name, lastname] = isHostSplited;
 
   return (
-    <div className="host">
-      <div className="host__name">
+    <figure className="host">
+      <figcaption className="host__name">
         <p className="host__firstname">{name.trim()}</p>
         <p className="host__lastname">{lastname.trim()}</p>
-      </div>
+      </figcaption>
 
-      <img src={host.picture} alt="" className="host__picture" />
-    </div>
+      <img src={host.picture} alt="photo du gérant" className="host__picture" />
+    </figure>
   );
 };
 

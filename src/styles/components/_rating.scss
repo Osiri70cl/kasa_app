@@ -4,6 +4,9 @@
 
   &__icon {
     margin-right: 5px;
+    @include media-query(small) {
+      height: 18px;
+    }
     @include media-query(medium) {
       height: 24px;
     }

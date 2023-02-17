@@ -3,26 +3,33 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  text-align: center;
   height: 100%;
   width: 100%;
+  margin: 150px 0;
 
   .errorNumber {
-    margin: 66px;
-    width: 599px;
-    height: 263px;
+    color: $color-1;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 142.6%;
+    @include media-query(large) {
+      font-weight: 700;
+      font-size: 288px;
+      line-height: 142.6%;
+    }
   }
 
   .errorText {
-    width: 100%;
-    text-align: center;
-    font-size: 36px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 142.6%;
     color: $color-1;
-    margin-bottom: 142px;
   }
   .errorBackLink {
     font-size: 18px;
     color: $color-1;
-    margin: 42px;
+    margin: 42px 0px;
   }
 }
 
@@ -34,11 +41,10 @@
   .errorText {
     font-size: 18px;
     margin-bottom: 133px;
-    width: 260px;
-    height: 52px;
+    margin-top: 40px;
   }
   .errorBackLink {
     font-size: 20px;
-    margin: 42px;
+    margin: 42px 0px;
   }
 }

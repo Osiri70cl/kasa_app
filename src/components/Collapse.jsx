@@ -15,7 +15,7 @@ const Collapse = ({ title, content }) => {
     }
   };
   return (
-    <div className="collapse ">
+    <article className="collapse ">
       <button type="button" className="collapse__button" onClick={isCollapse}>
         {title}
 
@@ -47,7 +47,7 @@ const Collapse = ({ title, content }) => {
           <p className="collapse__text">{content}</p>
         )}
       </div>
-    </div>
+    </article>
   );
 };
 

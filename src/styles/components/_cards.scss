@@ -5,7 +5,10 @@
   border-radius: 10px;
   animation: fadeInUp 600ms ease-in-out;
   overflow: hidden;
-
+  margin: 10px 0px;
+  @include media-query(medium) {
+    margin: 0;
+  }
   &__img {
     width: inherit;
     height: inherit;

@@ -39,10 +39,18 @@ const Slider = ({ slides }) => {
       {length > 1 ? (
         <>
           <div className="slider__previous" onClick={prevSlide}>
-            <img src={arrowLeft} alt="" className="slider__previous-icon" />
+            <img
+              src={arrowLeft}
+              alt="image de présentation"
+              className="slider__previous-icon"
+            />
           </div>
           <div className="slider__next" onClick={nextSlide}>
-            <img src={arrowRight} alt="" className="slider__next-icon" />
+            <img
+              src={arrowRight}
+              alt="image de présentation"
+              className="slider__next-icon"
+            />
           </div>
           <div className="slider__info">
             <span className="slider__current-slide">{current + 1}</span> /{" "}

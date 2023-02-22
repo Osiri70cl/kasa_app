@@ -1,9 +1,12 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 import Logo from "../assets/img/logo.svg";
 
 const Header = () => {
+  const pathname = useLocation().pathname;
+  const activeClassName = "navbar__links__style--focused";
+
   return (
     <header>
       <nav className="navbar">
@@ -11,10 +14,26 @@ const Header = () => {
           <img src={Logo} alt="Logo" className="navbar__img" />
         </NavLink>
         <div className="navbar__links">
-          <NavLink to="/" className="navbar__links__style">
+          <NavLink
+            exact
+            to="/"
+            className={`${
+              pathname === "/"
+                ? `navbar__links__style ${activeClassName}`
+                : `navbar__links__style`
+            }`}
+          >
             Accueil
           </NavLink>
-          <NavLink to="/about" className="navbar__links__style">
+          <NavLink
+            exact
+            to="/about"
+            className={`${
+              pathname === "/about"
+                ? `navbar__links__style ${activeClassName}`
+                : `navbar__links__style`
+            }`}
+          >
             a propos
           </NavLink>
         </div>

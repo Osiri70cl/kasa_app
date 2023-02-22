@@ -13,11 +13,10 @@ const App = () => {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* path="*" permet de renvoyé vers la page 404 ou vers une page prédéfinit
-      si l'utilisateur se "perd" */}
-        <Route path="*" element={<Error />} />
         <Route path="/about" element={<About />} />
-        <Route path="products/:productId" element={<Singleproduct />} />
+        <Route path="/products/:productId" element={<Singleproduct />} />
+        {/* Add a catch-all route that redirects to the error page */}
+        <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
     </BrowserRouter>
